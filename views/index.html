@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>URL Shortener Microservice</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #333;
+        background-color: aliceblue;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+
+      li,
+      p {
+        font-size: 18px;
+      }
+
+      code {
+        font-size: 90%;
+      }
+
+      a {
+        color: #006fc6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+            <h1>API Project: URL Shortener Microservice</h1>
+            <h3>User Stories:</h1>
+            <ol class="user-stories">
+              <li>1. I can POST a URL to <code>[project_url]/api/shorturl/new</code> and I will receive a shortened URL in the JSON response. </li>
+              <li>Example :  <code>{"original_url":"www.google.com","short_url":1}</code></li>
+              <li>If I pass an invalid URL that doesn't follow the http(s)://www.example.com(/more/routes) format, the JSON response will contain an error like {"error":"invalid URL"}
+                HINT: to be sure that the submitted url points to a valid site you can use the function dns.lookup(host, cb) from the dns core module.</li>
+              <li>3.When I visit the shortened URL, it will redirect me to my original link.</li>
+              <li>Short URL Creation</li>
+              <li>example: POST [project_url]/api/shorturl/new - https://www.google.com</li>
+            </ol>
+
+            <h3>Example Usage:</h3>
+            <ul>
+                <li>
+                      <a href="api/shorturl">[this_project_url]/api/shorturl/3</a>
+                </li>
+            </ul>
+
+            <h3>Will Redirect to:</h3>
+            <p>
+                https://forum.freecodecamp.com
+            </p>
+    </div>
+  </body>
+</html>
